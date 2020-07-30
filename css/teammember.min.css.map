@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,QAAQ,AAAC,CACL,WAAW,CAAE,IAAI,CACjB,cAAc,CAAE,IAAI,CACvB",
-    "sources": [
-        "../sass/teammember.scss"
-    ],
-    "names": [],
-    "file": "teammember.min.css"
-}

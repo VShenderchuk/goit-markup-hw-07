@@ -27,11 +27,6 @@
     margin-bottom: 50px;
 }
 
-.list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
 
 .site-teammembers-list {
     display: flex;
@@ -104,23 +99,7 @@
     &:hover {
         background-color: $accent-color;
         color: $additional-color;
-    }
-}
-
-
-.links:link, .links:visited {
-    color: $title-text-color;
-}
-
-.links {
-    text-decoration: none;
-    transition-property: all;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-        color: $accent-color;
+        fill: $additional-color;
     }
 }
 
@@ -128,5 +107,9 @@
     width: 20px;
     height: 20px;
     fill: currentColor;
+
+&:hover {
+    fill: $additional-color;
+}
 }
 
