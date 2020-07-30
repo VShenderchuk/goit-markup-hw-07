@@ -35,8 +35,7 @@
 }
 
 .feature-image {
-    display: flex;
-    justify-content: center;
+    @include flex-center;
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left: 100px;

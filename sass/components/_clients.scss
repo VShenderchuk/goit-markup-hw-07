@@ -30,8 +30,7 @@
 
 .clients-item {
     margin-right: 30px;
-    display: flex;
-    align-items: center;
+    @include flex-center;
 
 &:last-child {
         margin-right: 0px;
@@ -40,12 +39,10 @@
 
 
 .clients-links {
-    display: flex;
+    @include flex-center;
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
-    justify-content: center;
-    align-items: center;
     width: 170px;
     height: 90px;
     fill: $icon-color;

@@ -24,3 +24,13 @@
 .link {
     text-decoration: none;
 }
+
+/* Flex styles*/
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    

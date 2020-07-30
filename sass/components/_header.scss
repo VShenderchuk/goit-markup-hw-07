@@ -10,7 +10,6 @@
   justify-content: space-between;
   align-items: center;
   background-color: $additional-color;
-  display: flex;
   width: 1170 px;
 }
 
@@ -22,8 +21,7 @@
   margin-right: auto;
 }
 .site-header-content {
-  display: flex;
-  align-items: center;
+  @include flex-center;
   width: 1170px;
 }
 
@@ -33,30 +31,9 @@
   padding-right: 85px;
 }
 
-
-.logo {
-  display: flex;
-  align-items: center;
-  width: 153px;
-  $font-family: Raleway, sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.19;
-}
-
 .link {
   text-decoration: none;
 }
-
-.logo-first {
-  color: #2196f3;
-}
-
-.logo-secondary {
-  color: #000000;
-}
-
-
 
 .site-nav {
   font-family: Roboto;
@@ -64,9 +41,7 @@
   font-size: 14px;
   line-height: 1.14;
   display: flex;
-  
 }
-
 
 .site-nav-item {
   position: relative;
@@ -75,7 +50,7 @@
   padding-bottom: 34px;
 
   &:last-child {
-    margin-right: 0; 
+    margin-right: 0;
   }
 }
 .site-nav-item:hover .nav-link-active:after {
@@ -90,22 +65,19 @@
 }
 
 .site-nav:hover {
-  color: $accent-color
-  }
-  
+  color: $accent-color;
+}
 
 .site-nav-main-address {
   margin-left: auto;
 }
 
 .site-nav-address {
-  display: flex;
+  @include flex-center;
   margin-left: auto;
   font-style: normal;
-  align-items: center;
-  justify-content: center;
 }
-.site-nav-address .site-nav-address-item+.site-nav-address-item {
+.site-nav-address .site-nav-address-item + .site-nav-address-item {
   margin-left: 30px;
 }
 
@@ -118,8 +90,7 @@
 }
 
 .mail-links {
-  display: flex;
-  align-items: center;
+  @include flex-center;
   color: $primary-text-color;
   font-weight: 500;
   font-size: 14px;
@@ -127,7 +98,7 @@
   text-decoration: none;
   transition-property: all;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: $transition-timing-function;
 
   &:hover {
     color: $accent-color;
@@ -142,8 +113,7 @@
 }
 
 .telnumber-links {
-  display: flex;
-  align-items: center;
+ @include flex-center;
   color: $primary-text-color;
   font-weight: 500;
   font-size: 14px;
@@ -151,7 +121,7 @@
   text-decoration: none;
   transition-property: all;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: $transition-timing-function;
 
   &:hover {
     color: $accent-color;

@@ -38,8 +38,7 @@
 }
 
 .main-button-primery {
-    display: flex;
-    align-items: center;
+    @include flex-center;
 }
 
 .button-primery {

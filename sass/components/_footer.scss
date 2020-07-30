@@ -1,215 +1,178 @@
 .footer-section {
-    background-color: $footer-color;
-
+  background-color: $footer-color;
 }
-.footer-section>.container {
-    display: flex;
-    align-items: center;
+.footer-section > .container {
+  @include flex-center;
 }
 
 .footer-content {
-    display: flex;
-    align-items: baseline;
-    padding-bottom: 60px;
-    padding-top: 60px;
+  display: flex;
+  align-items: baseline;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .address-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-right: 69px;
-    align-items: baseline;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 69px;
+  align-items: baseline;
 }
 .footer-logo {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 20px;
 }
 
 .footer-item {
-    margin-bottom: 0;
-    margin-top: 0;
-}
-
-.logo {
-    font-family: Raleway, sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.19;
-    display: flex;
-    align-items: center;
-}
-.logo {
-    width: 153px;
-}
-
-.logo-first {
-    color: #2196F3;
-}
-
-.logo-secondary {
-    color: #000000;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .address {
-    width: 231px;
-    font-style: normal;
+  width: 231px;
+  font-style: normal;
 }
 
-
 .site-address {
-    color: $additional-color;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    margin-bottom: 9px;
+  color: $additional-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  margin-bottom: 9px;
 
-&:last-child {
-        margin-bottom: 0;
-    }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .contacts {
-    color: rgba(255, 255, 255, 0.6);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 .social {
-    display: flex;
-    flex-direction: column;
-    padding-right: 94px;
-    width: 206px;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  padding-right: 94px;
+  width: 206px;
+  justify-content: space-between;
 }
 
 .item-headers {
-    display: block;
-    width: 145px;
-    color: $additional-color;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    padding-bottom: 20px;
+  display: block;
+  width: 145px;
+  color: $additional-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  padding-bottom: 20px;
 }
 
 .social-list {
-    display: flex;
-    align-items: center;
+  @include flex-center;
 }
 
 .social-item {
-    text-align: center;
+  text-align: center;
 
-&:not(:last-child) {
-        margin-right: 10px;
-    }
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .icon-footer {
-    color: $additional-color;
-    display: inline-flex;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    justify-content: center;
-    align-items: center;
+  color: $additional-color;
+  display: inline-flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
 
-&:hover {
-        background-color: $accent-color;
-    }
-    
+  &:hover {
+    background-color: $accent-color;
+  }
 }
 
-
 .social-icon {
-    width: 20px;
-    height: 20px;
-    fill: $additional-color;
-    text-decoration: none;
-    transition-property: all;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 20px;
+  height: 20px;
+  fill: $additional-color;
+  text-decoration: none;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: $transition-timing-function;
 }
 
 .icon-footer.social-icon {
-    fill: $additional-color;
+  fill: $additional-color;
 }
 .footer-container {
-    padding-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .footer-text {
-    display: block;
-    width: 219px;
-    color: $additional-color;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    padding-bottom: 20px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+  display: block;
+  width: 219px;
+  color: $additional-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  padding-bottom: 20px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
-
 .footer-form {
-    display: flex;
+  display: flex;
 }
 
 .footer-form input {
-    width: 358px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    background-color: $footer-color;
-    line-height: 1.15;
-    margin: 0;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: $footer-color;
+  line-height: 1.15;
+  margin: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
 }
 
 .mail-form {
-    display: flex;
+  display: flex;
 }
 
 .input-mail {
-    padding-left: 16px;
+  padding-left: 16px;
 }
 .mail-button {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 200px;
-    height: 50px;
-    padding: 10px 29px;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    background-color: $accent-color;
-    color: $additional-color;
-    font-weight: 700;
-    font-size: 16px;
-    text-align: center;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    margin-left: 12px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 29px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: $accent-color;
+  color: $additional-color;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  margin-left: 12px;
 }
 
 .social-icon-fly {
-    margin-left: 10px;
+  margin-left: 10px;
 }
-
-
-
-
-
-
-
-
-
-

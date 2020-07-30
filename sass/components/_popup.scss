@@ -180,9 +180,7 @@
 }
 
 .checkbox-label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     margin-bottom: 30px;
     font-weight: 400;
     font-size: 14px;
