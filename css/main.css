@@ -1307,14 +1307,15 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(0.8);
-          transform: translate(-50%, -50%) scale(0.8);
+  -webkit-transform: translate(-50%, -50%) scale(0.9);
+          transform: translate(-50%, -50%) scale(0.9);
   opacity: 1;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 40px;
+  margin: 0;
+  padding-bottom: 40px;
   text-align: center;
   max-width: 528px;
   max-height: 581px;
@@ -1328,13 +1329,25 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
   margin-top: 0;
   margin-bottom: 30px;
   font-weight: 700;
+  width: 448px;
+  height: 23px;
+  font-family: Roboto;
+  font-style: normal;
   font-size: 20px;
   line-height: 1, 15;
+  letter-spacing: 0.03em;
   color: #212121;
 }
 
@@ -1394,6 +1407,7 @@ body {
           flex-direction: column;
   margin-bottom: 28px;
   max-width: 448px;
+  height: 40px;
 }
 
 .form-field:focus-within > .form-icon {
@@ -1407,6 +1421,11 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
 }
 
 .form-input:focus {
@@ -1454,6 +1473,21 @@ body {
   fill: #212121;
 }
 
+.name {
+  width: 12px;
+  height: 12px;
+  padding: 7;
+}
+
+.sendto {
+  width: 15px;
+  height: 12;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
 .form-field-comment {
   position: relative;
   display: -webkit-box;
@@ -1464,6 +1498,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 20px;
+  width: 448px;
+  height: 120px;
 }
 
 .form-field-comment:focus {
@@ -1495,6 +1531,8 @@ body {
   left: 16px;
   font-weight: 400;
   font-size: 14px;
+  font-family: Roboto;
+  font-style: normal;
   line-height: 1.14;
   letter-spacing: 0.01em;
 }
@@ -1527,7 +1565,15 @@ body {
 }
 
 .check-mark {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 16px;
   height: 15px;
   margin-right: 8px;
@@ -1546,7 +1592,8 @@ body {
 
 .send {
   display: inline-block;
-  min-width: 200px;
+  width: 200px;
+  height: 50px;
   padding: 10px 55px;
   margin-top: 0;
   margin-bottom: 0;
@@ -1554,6 +1601,8 @@ body {
   border-radius: 4px;
   background-color: #2196f3;
   color: #ffffff;
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   text-align: center;
