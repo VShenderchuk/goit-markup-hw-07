@@ -12,9 +12,13 @@
 const refs = {
   openModalBtn: document.querySelector('[data-open-modal]'),
   closeModalBtn: document.querySelector('[data-close-modal]'),
-  backdrop: document.querySelector('[data-backdrop]'),
+  backdrop: document.querySelector('[data-modal]'),
+
+  
+
   
 };
+
 
 refs.openModalBtn.addEventListener('click', toggleModal);
 refs.closeModalBtn.addEventListener('click', toggleModal);
@@ -25,6 +29,7 @@ function toggleModal() {
   refs.backdrop.classList.toggle('is-hidden');
  
 }
+
 
 function logBackdropClick() {
   console.log('Это клик в бекдроп');
