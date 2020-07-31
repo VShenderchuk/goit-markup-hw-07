@@ -1245,6 +1245,7 @@ body {
 
 .input-mail:focus {
   background-color: #ffffff;
+  outline: none;
 }
 
 .mail-button {
