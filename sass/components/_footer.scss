@@ -153,6 +153,9 @@
 
 .input-mail {
   padding-left: 16px;
+  &:focus {
+    background-color: $additional-color;
+  }
 }
 .mail-button {
   display: inline-flex;

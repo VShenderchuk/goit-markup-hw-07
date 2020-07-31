@@ -1,69 +1,68 @@
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .features {
-    background-color: $additional-color;
+  background-color: $additional-color;
 }
 .container {
-    width: 1170px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
 .features-list {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .features-item {
-    width: 270px;
-    align-items: center;
-    margin-right: 30px;
+  width: 270px;
+  align-items: center;
+  margin-right: 30px;
 
-    &:last-child {
-        margin-right: 0px;
-    }
+  &:last-child {
+    margin-right: 0px;
+  }
 
-    &:first-child {
-        margin-left: 0px;
-    }
+  &:first-child {
+    margin-left: 0px;
+  }
 }
 
 .feature-image {
-    @include flex-center;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 100px;
-    padding-right: 100px;
-    background-color: $features-area-color;
-    border-radius: 4px;
+  @include flex-center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: $features-area-color;
+  border-radius: 4px;
 }
 
 .features-icon {
-    width: 70px;
-    height: 70px;
+  width: 70px;
+  height: 70px;
 }
 
 .site-description-logo-title {
-    color: $title-text-color;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-top: 30px;
-    padding-bottom: 10px;
+  color: $title-text-color;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .text {
-    color: $primary-text-color;
-    font-size: 14px;
-    line-height: 1.71;
-    margin-top: 0;
-    margin-bottom: 0;
+  color: $primary-text-color;
+  font-size: 14px;
+  line-height: 1.71;
+  margin-top: 0;
+  margin-bottom: 0;
 }

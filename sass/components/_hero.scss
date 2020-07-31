@@ -1,59 +1,64 @@
 .hero {
-    align-items: center;
-    text-align: center;
-    max-width: 1600px;
-    height: 600px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: $primary-text-color;
+  align-items: center;
+  text-align: center;
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: $primary-text-color;
 }
 
 .overlay {
-    max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/Headerimg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url("../images/Headerimg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
-    padding-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 696px;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 200px;
-    color: $additional-color;
-    font-weight: 696;
-    font-size: 44px;
-    line-height: 1.36;
+  padding-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 200px;
+  color: $additional-color;
+  font-weight: 696;
+  font-size: 44px;
+  line-height: 1.36;
 }
 
 .hero-button {
-    padding-bottom: 200px;
+  padding-bottom: 200px;
 }
 
 .main-button-primery {
-    @include flex-center;
+  @include flex-center;
 }
 
 .button-primery {
-    color: $additional-color;
-    background-color: $accent-color;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.87;
-    display: inline-block;
-    border: 1px solid transparent;
-    border-radius: 6px;
-    padding: 10px 32px;
-    width: 200px;
-    text-decoration: none;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 0;
+  color: $additional-color;
+  background-color: $accent-color;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 10px 32px;
+  width: 200px;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
 }

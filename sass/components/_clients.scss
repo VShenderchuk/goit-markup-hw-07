@@ -1,60 +1,55 @@
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .container {
-    width: 1170px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-title {
-    color: $title-text-color;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 50px;
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
-
-
 .site-clientslogo {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .clients-item {
-    margin-right: 30px;
-    @include flex-center;
+  margin-right: 30px;
+  @include flex-center;
 
-&:last-child {
-        margin-right: 0px;
-    }
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
-
 .clients-links {
-    @include flex-center;
-    border: 1px solid #AFB1B8;
-    box-sizing: border-box;
-    border-radius: 4px;
-    width: 170px;
-    height: 90px;
-    fill: $icon-color;
+  @include flex-center;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
+  fill: $icon-color;
 
-&:hover {
-        border-color: $accent-color;
-        fill: $accent-color;
-    }
+  &:hover {
+    border-color: $accent-color;
+    fill: $accent-color;
+  }
 }
 
 .clients-icon {
-    fill: currentColor;
+  fill: currentColor;
 }
-
-
