@@ -271,7 +271,7 @@
                     </b>
                     <ul class="social-list list">
                         <li class="social-item">
-                            <a class="icon-footer links" href=" " aria-label="Instagram link ">
+                            <a class="icon-footer links" href="https://www.instagram.com/" aria-label="Instagram link ">
                                 <svg class="social-icon">
                                     <use href="./images/symbol-defs.svg#instagram-2-1">
                                     </use>
@@ -279,7 +279,7 @@
                             </a>
                         </li>
                         <li class="social-item">
-                            <a class="icon-footer links" href=" " aria-label="Twitter link ">
+                            <a class="icon-footer links" href="https://www.twitter.com/" aria-label="Twitter link ">
                                 <svg class="social-icon">
                                     <use href="./images/symbol-defs.svg#twitter-1-1">
                                     </use>
@@ -287,7 +287,7 @@
                             </a>
                         </li>
                         <li class="social-item">
-                            <a class="icon-footer links" href=" " aria-label="Facebook link ">
+                            <a class="icon-footer links" href="https://www.facebook.com/" aria-label="Facebook link ">
                                 <svg class="social-icon">
                                     <use href="./images/symbol-defs.svg#facebook">
                                     </use>
@@ -295,7 +295,7 @@
                             </a>
                         </li>
                         <li class="social-item">
-                            <a class="icon-footer links" href=" " aria-label="linkidIn link ">
+                            <a class="icon-footer links" href="https://www.linkedin.com/" aria-label="linkidIn link ">
                                 <svg class="social-icon">
                                     <use href="./images/symbol-defs.svg#linkedin-1-1">
                                     </use>
@@ -309,7 +309,7 @@
                     <form class="footer-form">
                         <div class="mail-form">
                             <input class="input-mail" type="email" name="male" placeholder="E-mail">
-                            <button type="submit" class="mail-button" data-open-modal>
+                            <button type="button" class="mail-button">
                                 Подписаться
                                 <svg class="social-icon-fly" width="24px" height="24px">
                                     <use href="./images/symbol-defs.svg#fly">
@@ -322,12 +322,12 @@
             </div>
         </div>
     </footer>
-    
+
     <!--Popup-->
-    <div class="backdrop is-hidden" data-backdrop>
+    <div data-modal class="backdrop is-hidden" >
         <div class="modal">
             <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
-            <button data-close-modal class="button-close">
+            <button class="button-close" data-modal-close>
                 <svg class="icon-close">
                     <use href="./images/symbol-defs.svg#close-icon">
                     </use>
@@ -374,7 +374,7 @@
         </div>
 
     </div>
-    <script type="text/javascript" src="./js/modal.js"></script> 
+    <script type="text/javascript" src="./js/modal.js"></script>
 </body>
 
 </html>

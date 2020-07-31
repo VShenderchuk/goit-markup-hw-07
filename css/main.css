@@ -669,6 +669,10 @@ body {
   margin-bottom: 0;
 }
 
+.button-primery:focus {
+  outline: none;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -1268,6 +1272,10 @@ body {
   margin-left: 12px;
 }
 
+.mail-button:focus {
+  outline: none;
+}
+
 .social-icon-fly {
   margin-left: 10px;
 }
@@ -1343,6 +1351,10 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   cursor: pointer;
+}
+
+.button-close:focus {
+  outline: none;
 }
 
 .icon-close {
@@ -1546,6 +1558,10 @@ body {
   text-align: center;
   line-height: 1.88;
   letter-spacing: 0.06em;
+}
+
+.send:focus {
+  outline: none;
 }
 
 .checkbox-label a {
